@@ -1,0 +1,145 @@
+/* Basic Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Customer Dashboard Container */
+.customer-dashboard-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #1e3a8a;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #3b82f6;
+}
+
+/* Header */
+.customer-dashboard-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.customer-dashboard-logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Welcome Text */
+.customer-dashboard-welcome-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.customer-dashboard-welcome-text h1 {
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+
+.customer-dashboard-welcome-text p {
+  color: #3b82f6;
+}
+
+/* Restaurant List */
+.customer-dashboard-restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Card Styles */
+.customer-dashboard-card {
+  background-color: #f8fafc;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  max-width: 100%;
+}
+
+.customer-dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.customer-dashboard-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.customer-dashboard-card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-dashboard-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.customer-dashboard-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.customer-dashboard-tag {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Search Container */
+.customer-dashboard-search-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.customer-dashboard-search-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #1e3a8a;
+  outline: none;
+}
+
+.customer-dashboard-search-container input:focus {
+  border-color: #4f74db;
+}
